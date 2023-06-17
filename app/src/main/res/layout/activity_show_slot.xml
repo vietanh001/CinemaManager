@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context=".show.ShowSlotActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:text="Chọn ví trị ngồi"
+            android:textColor="@color/white"
+            android:textSize="23dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"/>
+
+        <View
+            android:id="@+id/vBack"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/icon_arrow_back_24" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="-20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTenManHinh"
+            android:text="Màn hình"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:background="@drawable/screen"
+            android:layout_width="350dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="150dp"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="510dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvChoNgoi"
+                android:layout_marginRight="21dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/white"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp">
+                    <TextView
+                        android:gravity="center"
+                        android:background="@color/gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:text="Đã đặt"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/white"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp">
+                    <TextView
+                        android:gravity="center"
+                        android:drawableLeft="@drawable/icon_done_24"
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:text="Đang chọn"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/white"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp">
+                    <TextView
+                        android:gravity="center"
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:text="Ghế thường"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/white"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp">
+                    <TextView
+                        android:gravity="center"
+                        android:background="@color/orange"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:text="Ghế VIP"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvTenPhim"
+                    android:text="Đa vũ trụ hỗn loạn"
+                    android:textStyle="bold"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/tvHTvaDT"
+                    android:text="3D - C13"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/tvSeat"
+                    android:text="Ghế đang chọn: "
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/red"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTongTien"
+            android:text="0 ghế - 0 VND"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btDatVe"
+            android:text="Đặt vé"
+            android:layout_weight="1"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_blue"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/img_backgound_login"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:text="Tạo tài khoản"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:textSize="30dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Họ"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:id="@+id/etHo"
+                android:hint="Họ"
+                android:textColorHint="@color/gray"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/icon_person_24"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/text_view"
+                android:drawablePadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Tên"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:id="@+id/etTen"
+                android:hint="Tên"
+                android:textColorHint="@color/gray"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/icon_person_24"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/text_view"
+                android:drawablePadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Số điện thoại"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etSDT"
+        android:hint="Số điện thoại"
+        android:textColorHint="@color/gray"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/icon_phone_24"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/text_view"
+        android:drawablePadding="5dp"
+        android:layout_width="350dp"
+        android:layout_height="45dp"/>
+
+    <TextView
+        android:text="Địa chỉ"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etDiaChi"
+        android:hint="Địa chỉ"
+        android:textColorHint="@color/gray"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/icon_house_24"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/text_view"
+        android:drawablePadding="5dp"
+        android:layout_width="350dp"
+        android:layout_height="45dp"/>
+
+    <TextView
+        android:text="Tài khoản"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etTaiKhoan"
+        android:hint="Tài khoản"
+        android:textColorHint="@color/gray"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/icon_email_24"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/text_view"
+        android:drawablePadding="5dp"
+        android:layout_width="350dp"
+        android:layout_height="45dp"/>
+
+    <TextView
+        android:text="Mật khẩu"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etMatKhau"
+        android:hint="Mật khẩu"
+        android:textColorHint="@color/gray"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:inputType="textPassword"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/icon_security_24"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/text_view"
+        android:drawablePadding="5dp"
+        android:layout_width="350dp"
+        android:layout_height="45dp"/>
+
+    <TextView
+        android:text="Nhập lại mật khẩu"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etLaiMatKhau"
+        android:hint="Nhập lại mật khẩu"
+        android:textColorHint="@color/gray"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:inputType="textPassword"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/icon_security_24"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/text_view"
+        android:drawablePadding="5dp"
+        android:layout_width="350dp"
+        android:layout_height="45dp"/>
+
+    <Button
+        android:id="@+id/btDangKy"
+        android:text="Đăng ký"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_blue"
+        android:layout_width="350dp"
+        android:layout_height="45dp"/>
+
+    <Button
+        android:id="@+id/btTroLai"
+        android:text="Trở lại"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_blue"
+        android:layout_width="350dp"
+        android:layout_height="45dp"/>
+
+    <TextView
+        android:id="@+id/tvDangNhap"
+        android:text="Quay lại trang đăng nhập"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

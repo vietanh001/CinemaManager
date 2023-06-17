@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">image</string>
+
+    <string-array name="spKiemDuyet">
+        <item>Kiểm duyệt</item>
+        <item>Phổ biến (P)</item>
+        <item>Cấm khán giả dưới 13 tuổi (C13)</item>
+        <item>Cấm khán giả dưới 16 tuổi (C16)</item>
+        <item>Cấm khán giả dưới 18 tuổi (C18)</item>
+    </string-array>
+
+    <string-array name="spNgonNgu">
+        <item>Ngôn ngữ</item>
+        <item>Lồng tiếng Việt</item>
+        <item>Tiếng Anh - Phụ đề Tiếng Việt</item>
+        <item>Tiếng Trung - Phụ đề Tiếng Việt</item>
+        <item>Tiếng Hàn - Phụ đề Tiếng Việt</item>
+        <item>Tiếng Nhật - Phụ đề Tiếng Việt</item>
+        <item>Tiếng Pháp - Phụ đề Tiếng Việt</item>
+    </string-array>
+
+    <string-array name="spDiaDiem">
+        <item>Địa điểm</item>
+        <item>Hà Đông</item>
+        <item>Đống Đa</item>
+        <item>Cầu Giấy</item>
+        <item>Đông Anh</item>
+        <item>Long Biên</item>
+    </string-array>
+
+    <string-array name="spHinhThuc">
+        <item>Hình thức chiếu</item>
+        <item>2D</item>
+        <item>3D</item>
+        <item>IMAX</item>
+    </string-array>
+
+    <string-array name="spSoGhe">
+        <item>Chọn số ghế trên một hàng</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+
+    <string-array name="spSoHang">
+        <item>Chọn số hàng trong phòng</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+
+    <string name="open">Open Navigation Drawer</string>
+    <string name="close">Close Navigation Drawer</string>
+</resources>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context=".show.InforMovieActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:text="Thông tin phim"
+            android:textColor="#FFF"
+            android:textSize="23dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"/>
+
+        <View
+            android:id="@+id/vBack"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/icon_arrow_back_24" />
+    </RelativeLayout>
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:autoPlay="false"
+        android:layout_below="@id/rl"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_below="@id/youtube_player_view"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="420dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img"/>
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tvTenPhim"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:lines="2"
+                        android:layout_marginLeft="10dp"
+                        android:text="Doctor Strange In The Multiverse Of Madness"
+                        android:textAllCaps="true"
+                        android:textColor="#FFF"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tvNgayPH"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/icon_calendar_show"
+                            android:text="25/04/2023"
+                            android:textSize="16dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:textColor="#FFF"
+                            android:drawablePadding="5dp"/>
+
+                        <TextView
+                            android:id="@+id/tvThoiLuong"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/icon_time_show"
+                            android:text="180 phút"
+                            android:textSize="16dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:textColor="#FFF"
+                            android:layout_marginLeft="50dp"
+                            android:drawablePadding="5dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvYeuThich"
+                        android:text="9.0"
+                        android:textSize="16dp"
+                        android:textColor="#FFF"
+                        android:drawableLeft="@drawable/icon_favorite"
+                        android:drawablePadding="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvNoiDung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="10dp"
+                android:text="Phù Thủy Tối Thượng Trong Đa Vũ Trụ Hỗn Loạn kể về sau các sự kiện của Avengers: Endgame, Tiến sĩ Stephen Strange tiếp tục nghiên cứu về Viên đá Thời gian. Nhưng một người bạn cũ đã trở thành kẻ thù tìm cách tiêu diệt mọi phù thủy trên Trái đất, làm xáo trộn kế hoạch của Strange và cũng khiến anh ta mở ra một tội ác khôn lường."
+                android:textColor="#FFF"
+                android:textSize="16dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:text="Kiểm duyệt"
+                    android:textSize="16dp"
+                    android:textColor="#FFF"
+                    android:textStyle="bold"
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvKiemDuyet"
+                    android:text="Cấm phổ biến đến khán giả dưới 18 tuổi(C18)"
+                    android:textSize="16dp"
+                    android:textColor="#FFF"
+                    android:layout_width="280dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Thể loại"
+                    android:textSize="16dp"
+                    android:textColor="#FFF"
+                    android:textStyle="bold"
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvTheLoai"
+                    android:text="Hành động, Phiêu lưu, Thần thoại"
+                    android:textSize="16dp"
+                    android:textColor="#FFF"
+                    android:layout_width="280dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Đạo diễn"
+                    android:textSize="16dp"
+                    android:textColor="#FFF"
+                    android:textStyle="bold"
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvDaoDien"
+                    android:text="Sam Raimi"
+                    android:textSize="16dp"
+                    android:textColor="#FFF"
+                    android:layout_width="280dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Diễn viên"
+                    android:textSize="16dp"
+                    android:textColor="#FFF"
+                    android:textStyle="bold"
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvDienVien"
+                    android:text="Benedict Cumberbatch, Elizabeth Olsen, Chiwetel Ejiofor, Benedict Wong, Xochitl Gomez, Michael Stuhlbarg và Rachel McAdams"
+                    android:textSize="16dp"
+                    android:textColor="#FFF"
+                    android:layout_width="280dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Ngôn ngữ"
+                    android:textSize="16dp"
+                    android:textColor="#FFF"
+                    android:textStyle="bold"
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvNgonNgu"
+                    android:text="Tiếng Anh - Phụ đề Tiếng Việt"
+                    android:textSize="16dp"
+                    android:textColor="#FFF"
+                    android:layout_width="280dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/btDatVe"
+        android:text="Đặt vé"
+        android:background="@drawable/button_blue"
+        android:layout_alignParentBottom="true"
+        android:layout_width="350dp"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="45dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/colorBackground"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/tvLoai"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:background="@drawable/text_view_ht"
+            android:gravity="center"
+            android:text="3D"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            android:textSize="16dp"/>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

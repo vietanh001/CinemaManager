@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context=".admin.SetUpActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:text="Lên lịch phim"
+            android:textColor="@color/white"
+            android:textSize="23dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"/>
+
+        <View
+            android:id="@+id/vBack"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/icon_arrow_back_24" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Chọn ngày xem"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:layout_width="350dp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvNgayChieu"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/rl">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/tvNgay"
+                android:text="Hôm nay, Ngày 9 tháng 5"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/bt"
+                android:text="Cập nhập"
+                android:layout_marginTop="10dp"
+                android:layout_width="200dp"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_blue"/>
+
+            <TextView
+                android:background="#9F9C9C"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <TextView
+                android:text="Chọn phim"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:layout_width="350dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/spTenPhim"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/spinner"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="350dp"
+                    android:layout_height="45dp"/>
+
+                <ImageView
+                    android:src="@drawable/icon_arrow_drop_down_24"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignEnd="@id/spTenPhim"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:background="#9F9C9C"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <TextView
+                android:text="Chọn địa điểm chiếu"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:layout_width="350dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/spDiaDiem"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/spinner"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="350dp"
+                    android:layout_height="45dp"/>
+
+                <ImageView
+                    android:src="@drawable/icon_arrow_drop_down_24"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignEnd="@id/spDiaDiem"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:background="#9F9C9C"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <TextView
+                android:text="Chọn phòng chiếu"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:layout_width="350dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/spSoPhong"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/spinner"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="350dp"
+                    android:layout_height="45dp"/>
+
+                <ImageView
+                    android:src="@drawable/icon_arrow_drop_down_24"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignEnd="@id/spSoPhong"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:background="#9F9C9C"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <TextView
+                android:text="Chọn giờ chiếu"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:layout_width="350dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvGioChieu"
+                android:hint="Giờ chiếu phim"
+                android:textSize="16dp"
+                android:background="@drawable/text_view_ht"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="350dp"
+                android:layout_height="45dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:background="#9F9C9C"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <TextView
+                android:text="Chọn hình thức chiếu"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:layout_width="350dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/spHinhThuc"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/spinner"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="350dp"
+                    android:layout_height="45dp"/>
+
+                <ImageView
+                    android:src="@drawable/icon_arrow_drop_down_24"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignEnd="@id/spHinhThuc"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btSetUp"
+                android:text="Set Up"
+                android:layout_marginTop="10dp"
+                android:layout_width="350dp"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_blue"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

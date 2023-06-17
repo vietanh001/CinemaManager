@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/tvNhan"
+            android:text="Tất cả các phim"
+            android:textColor="#FFF"
+            android:textSize="23dp"
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"/>
+
+        <View
+            android:id="@+id/vBack"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/icon_arrow_back_24" />
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:queryHint="Nhập tên phim"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="15dp"
+            android:searchIcon="@drawable/icon_search_24"
+            android:theme="@style/ThemeOverlay.Search."
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/rl"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="700dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#202434"
+                android:orientation="vertical"
+                android:scrollbars="vertical"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:layout_constraintTop_toBottomOf="@id/rl"
+                app:spanCount="2"
+                tools:layout_editor_absoluteX="0dp"
+                tools:listitem="@layout/view_movie_layout" />
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

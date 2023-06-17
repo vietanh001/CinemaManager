@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/img_backgound_login"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:src="@drawable/cinema_login"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"/>
+
+    <EditText
+        android:id="@+id/etTaiKhoan"
+        android:hint="Tài khoản"
+        android:textColorHint="@color/white"
+        android:textSize="16dp"
+        android:text="vietanh11x01@gmail.com"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/icon_person_24"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/text_view"
+        android:drawablePadding="5dp"
+        android:layout_width="350dp"
+        android:layout_height="45dp"/>
+
+    <EditText
+        android:id="@+id/etMatKhau"
+        android:hint="Mật khẩu"
+        android:textColorHint="@color/white"
+        android:textSize="16dp"
+        android:text="123456"
+        android:textColor="@color/white"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/icon_security_24"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/text_view"
+        android:drawablePadding="5dp"
+        android:layout_width="350dp"
+        android:layout_height="45dp"/>
+
+    <Button
+        android:id="@+id/btDangNhap"
+        android:text="Đăng nhập"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_blue"
+        android:layout_width="350dp"
+        android:layout_height="45dp"/>
+
+    <TextView
+        android:id="@+id/tvQuenMatKhau"
+        android:text="Quên mật khẩu"
+        android:textSize="16dp"
+        android:gravity="right|center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"/>
+    
+    <TextView
+        android:text="Lựa chọn khác"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"/>
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/img_face"
+            android:layout_marginRight="60dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+        <ImageView
+            android:src="@drawable/img_google"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+        <ImageView
+            android:src="@drawable/img_phone"
+            android:layout_marginLeft="60dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTaoTaiKhoan"
+        android:text="Tạo tài khoản"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
